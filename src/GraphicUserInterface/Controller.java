@@ -46,6 +46,7 @@ public class Controller implements Initializable{
         Media media=new Media("file:/"+System.getProperty("user.dir").replace('\\','/')+"/song.mp3");
         MediaPlayer mediaPlayer=new MediaPlayer(media);
         mediaPlayer.play();*/
+        /// You are my boss
     }
     public void play(){
         System.out.println(" play ");
