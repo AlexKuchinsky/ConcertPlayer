@@ -1,0 +1,1258 @@
+Index: src/GraphicUserInterface/AllPlaylistsPackage/playlistsScene.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllPlaylistsPackage/playlistsScene.fxml	(revision )
++++ src/GraphicUserInterface/AllPlaylistsPackage/playlistsScene.fxml	(revision )
+@@ -0,0 +1,138 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ListView?>
++<?import javafx.scene.control.Menu?>
++<?import javafx.scene.control.MenuBar?>
++<?import javafx.scene.control.MenuItem?>
++<?import javafx.scene.control.Slider?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.BorderPane?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.Region?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
++
++<BorderPane maxHeight="700.0" maxWidth="712.0" minHeight="400.0" minWidth="600.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicUserInterface.Controller">
++  <bottom>
++    <VBox prefHeight="367.0" prefWidth="700.0" spacing="2.0" BorderPane.alignment="CENTER">
++      <children>
++        <ListView prefHeight="323.0" prefWidth="692.0" />
++        <HBox alignment="TOP_RIGHT" prefWidth="712.0" spacing="8.0" VBox.vgrow="ALWAYS">
++          <children>
++            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="544.0" HBox.hgrow="ALWAYS" />
++            <Button mnemonicParsing="false" text="Add" />
++            <Button mnemonicParsing="false" text="Remove" />
++          </children>
++          <padding>
++            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
++          </padding>
++        </HBox>
++      </children>
++      <padding>
++        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
++      </padding>
++    </VBox>
++  </bottom>
++  <top>
++    <VBox>
++      <children>
++        <MenuBar style="-fx-background-color: ccf0FF;">
++          <menus>
++            <Menu mnemonicParsing="false" text="All songs" />
++            <Menu mnemonicParsing="false" text="Playlists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Artists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Albums">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++          </menus>
++        </MenuBar>
++        <HBox prefHeight="196.0" prefWidth="600.0" style="-fx-background-color: #7e95ad;">
++          <children>
++            <VBox prefHeight="205.0" prefWidth="273.0">
++              <children>
++                <ImageView blendMode="SRC_OVER" depthTest="DISABLE" fitHeight="211.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
++                  <image>
++                    <Image url="@../photo.jpg" />
++                  </image>
++                  <VBox.margin>
++                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++                  </VBox.margin>
++                </ImageView>
++              </children>
++            </VBox>
++            <VBox alignment="TOP_CENTER" prefHeight="170.0" prefWidth="452.0" spacing="5.0">
++              <children>
++                <Label alignment="BASELINE_CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="440.0" text="Louse yourself to dance" textAlignment="CENTER" textFill="WHITE">
++                  <font>
++                    <Font size="22.0" />
++                  </font>
++                </Label>
++                <Label prefHeight="17.0" prefWidth="423.0" text="Daft Punk | Universe" textFill="WHITE">
++                  <font>
++                    <Font size="16.0" />
++                  </font>
++                </Label>
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </VBox>
++          </children>
++        </HBox>
++        <VBox style="-fx-background-color: ffffff;">
++          <children>
++            <HBox alignment="CENTER" spacing="10.0">
++              <children>
++                <Label text="Label" />
++                <Slider prefWidth="502.0" />
++                <Label text="Label" />
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </HBox>
++            <HBox maxHeight="-Infinity" minHeight="48.999900000002526" padding="$x3" prefHeight="48.999900000002526" prefWidth="712.0" spacing="10.0">
++              <children>
++                <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" prefWidth="-1.0" />
++                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏮">
++                  <font>
++                    <Font size="14.0" fx:id="x1" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" />
++                <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="▶">
++                  <font>
++                    <Font size="15.0" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" HBox.hgrow="ALWAYS" />
++                <Button font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏭" />
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="230.0" HBox.hgrow="ALWAYS" />
++                <Label alignment="CENTER" text="Volume" HBox.hgrow="ALWAYS" />
++                <Slider value="50.0">
++                  <HBox.margin>
++                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
++                  </HBox.margin>
++                </Slider>
++              </children>
++            </HBox>
++          </children>
++        </VBox>
++      </children>
++    </VBox>
++  </top>
++</BorderPane>
+Index: src/MediaComponents/Playlist.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/MediaComponents/Playlist.java	(revision )
++++ src/MediaComponents/Playlist.java	(revision )
+@@ -0,0 +1,14 @@
++package MediaComponents;
++
++import javafx.collections.transformation.SortedList;
++
++import java.io.Serializable;
++import java.util.ArrayList;
++import java.util.TreeSet;
++
++/**
++ * Created by Alex on 07.05.2017.
++ */
++public class Playlist implements Serializable{
++    ArrayList<Song> songs;
++}
+Index: src/MediaComponents/Album.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/MediaComponents/Album.java	(revision )
++++ src/MediaComponents/Album.java	(revision )
+@@ -0,0 +1,12 @@
++package MediaComponents;
++
++import java.io.Serializable;
++import java.util.ArrayList;
++import java.util.TreeSet;
++
++/**
++ * Created by Alex on 07.05.2017.
++ */
++public class Album implements Serializable {
++    protected TreeSet<Song> songs;
++}
+Index: src/GraphicUserInterface/AllAlbumsPackage/albumScene.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllAlbumsPackage/albumScene.fxml	(revision )
++++ src/GraphicUserInterface/AllAlbumsPackage/albumScene.fxml	(revision )
+@@ -0,0 +1,138 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ListView?>
++<?import javafx.scene.control.Menu?>
++<?import javafx.scene.control.MenuBar?>
++<?import javafx.scene.control.MenuItem?>
++<?import javafx.scene.control.Slider?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.BorderPane?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.Region?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
++
++<BorderPane maxHeight="700.0" maxWidth="712.0" minHeight="400.0" minWidth="600.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicUserInterface.AllAlbumsPackage.albumController">
++  <bottom>
++    <VBox prefHeight="367.0" prefWidth="700.0" spacing="2.0" BorderPane.alignment="CENTER">
++      <children>
++        <ListView prefHeight="323.0" prefWidth="692.0" />
++        <HBox alignment="TOP_RIGHT" prefWidth="712.0" spacing="8.0" VBox.vgrow="ALWAYS">
++          <children>
++            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="544.0" HBox.hgrow="ALWAYS" />
++            <Button mnemonicParsing="false" text="Add" />
++            <Button mnemonicParsing="false" text="Remove" />
++          </children>
++          <padding>
++            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
++          </padding>
++        </HBox>
++      </children>
++      <padding>
++        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
++      </padding>
++    </VBox>
++  </bottom>
++  <top>
++    <VBox>
++      <children>
++        <MenuBar style="-fx-background-color: ccf0FF;">
++          <menus>
++            <Menu mnemonicParsing="false" text="All songs" />
++            <Menu mnemonicParsing="false" text="Playlists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Artists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Albums">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++          </menus>
++        </MenuBar>
++        <HBox prefHeight="196.0" prefWidth="600.0" style="-fx-background-color: #7e95ad;">
++          <children>
++            <VBox prefHeight="205.0" prefWidth="273.0">
++              <children>
++                <ImageView blendMode="SRC_OVER" depthTest="DISABLE" fitHeight="211.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
++                  <image>
++                    <Image url="@../photo.jpg" />
++                  </image>
++                  <VBox.margin>
++                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++                  </VBox.margin>
++                </ImageView>
++              </children>
++            </VBox>
++            <VBox alignment="TOP_CENTER" prefHeight="170.0" prefWidth="452.0" spacing="5.0">
++              <children>
++                <Label alignment="BASELINE_CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="440.0" text="Louse yourself to dance" textAlignment="CENTER" textFill="WHITE">
++                  <font>
++                    <Font size="22.0" />
++                  </font>
++                </Label>
++                <Label prefHeight="17.0" prefWidth="423.0" text="Daft Punk | Universe" textFill="WHITE">
++                  <font>
++                    <Font size="16.0" />
++                  </font>
++                </Label>
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </VBox>
++          </children>
++        </HBox>
++        <VBox style="-fx-background-color: ffffff;">
++          <children>
++            <HBox alignment="CENTER" spacing="10.0">
++              <children>
++                <Label text="Label" />
++                <Slider prefWidth="502.0" />
++                <Label text="Label" />
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </HBox>
++            <HBox maxHeight="-Infinity" minHeight="48.999900000002526" padding="$x3" prefHeight="48.999900000002526" prefWidth="712.0" spacing="10.0">
++              <children>
++                <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" prefWidth="-1.0" />
++                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏮">
++                  <font>
++                    <Font size="14.0" fx:id="x1" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" />
++                <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="▶">
++                  <font>
++                    <Font size="15.0" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" HBox.hgrow="ALWAYS" />
++                <Button font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏭" />
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="230.0" HBox.hgrow="ALWAYS" />
++                <Label alignment="CENTER" text="Volume" HBox.hgrow="ALWAYS" />
++                <Slider value="50.0">
++                  <HBox.margin>
++                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
++                  </HBox.margin>
++                </Slider>
++              </children>
++            </HBox>
++          </children>
++        </VBox>
++      </children>
++    </VBox>
++  </top>
++</BorderPane>
+Index: src/GraphicUserInterface/AllArtistsPackage/artistsScene.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllArtistsPackage/artistsScene.fxml	(revision )
++++ src/GraphicUserInterface/AllArtistsPackage/artistsScene.fxml	(revision )
+@@ -0,0 +1,138 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ListView?>
++<?import javafx.scene.control.Menu?>
++<?import javafx.scene.control.MenuBar?>
++<?import javafx.scene.control.MenuItem?>
++<?import javafx.scene.control.Slider?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.BorderPane?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.Region?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
++
++<BorderPane maxHeight="700.0" maxWidth="712.0" minHeight="400.0" minWidth="600.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicUserInterface.Controller">
++  <bottom>
++    <VBox prefHeight="367.0" prefWidth="700.0" spacing="2.0" BorderPane.alignment="CENTER">
++      <children>
++        <ListView prefHeight="323.0" prefWidth="692.0" />
++        <HBox alignment="TOP_RIGHT" prefWidth="712.0" spacing="8.0" VBox.vgrow="ALWAYS">
++          <children>
++            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="544.0" HBox.hgrow="ALWAYS" />
++            <Button mnemonicParsing="false" text="Add" />
++            <Button mnemonicParsing="false" text="Remove" />
++          </children>
++          <padding>
++            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
++          </padding>
++        </HBox>
++      </children>
++      <padding>
++        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
++      </padding>
++    </VBox>
++  </bottom>
++  <top>
++    <VBox>
++      <children>
++        <MenuBar style="-fx-background-color: ccf0FF;">
++          <menus>
++            <Menu mnemonicParsing="false" text="All songs" />
++            <Menu mnemonicParsing="false" text="Playlists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Artists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Albums">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++          </menus>
++        </MenuBar>
++        <HBox prefHeight="196.0" prefWidth="600.0" style="-fx-background-color: #7e95ad;">
++          <children>
++            <VBox prefHeight="205.0" prefWidth="273.0">
++              <children>
++                <ImageView blendMode="SRC_OVER" depthTest="DISABLE" fitHeight="211.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
++                  <image>
++                    <Image url="@../photo.jpg" />
++                  </image>
++                  <VBox.margin>
++                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++                  </VBox.margin>
++                </ImageView>
++              </children>
++            </VBox>
++            <VBox alignment="TOP_CENTER" prefHeight="170.0" prefWidth="452.0" spacing="5.0">
++              <children>
++                <Label alignment="BASELINE_CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="440.0" text="Louse yourself to dance" textAlignment="CENTER" textFill="WHITE">
++                  <font>
++                    <Font size="22.0" />
++                  </font>
++                </Label>
++                <Label prefHeight="17.0" prefWidth="423.0" text="Daft Punk | Universe" textFill="WHITE">
++                  <font>
++                    <Font size="16.0" />
++                  </font>
++                </Label>
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </VBox>
++          </children>
++        </HBox>
++        <VBox style="-fx-background-color: ffffff;">
++          <children>
++            <HBox alignment="CENTER" spacing="10.0">
++              <children>
++                <Label text="Label" />
++                <Slider prefWidth="502.0" />
++                <Label text="Label" />
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </HBox>
++            <HBox maxHeight="-Infinity" minHeight="48.999900000002526" padding="$x3" prefHeight="48.999900000002526" prefWidth="712.0" spacing="10.0">
++              <children>
++                <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" prefWidth="-1.0" />
++                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏮">
++                  <font>
++                    <Font size="14.0" fx:id="x1" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" />
++                <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="▶">
++                  <font>
++                    <Font size="15.0" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" HBox.hgrow="ALWAYS" />
++                <Button font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏭" />
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="230.0" HBox.hgrow="ALWAYS" />
++                <Label alignment="CENTER" text="Volume" HBox.hgrow="ALWAYS" />
++                <Slider value="50.0">
++                  <HBox.margin>
++                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
++                  </HBox.margin>
++                </Slider>
++              </children>
++            </HBox>
++          </children>
++        </VBox>
++      </children>
++    </VBox>
++  </top>
++</BorderPane>
+Index: src/GraphicUserInterface/AllSongsPackage/songsController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllSongsPackage/songsController.java	(revision )
++++ src/GraphicUserInterface/AllSongsPackage/songsController.java	(revision )
+@@ -0,0 +1,7 @@
++package GraphicUserInterface.AllSongsPackage;
++
++/**
++ * Created by Alex on 09.05.2017.
++ */
++public class songsController {
++}
+Index: src/MediaComponents/Artist.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/MediaComponents/Artist.java	(revision )
++++ src/MediaComponents/Artist.java	(revision )
+@@ -0,0 +1,11 @@
++package MediaComponents;
++
++import java.io.Serializable;
++import java.util.TreeSet;
++
++/**
++ * Created by Alex on 07.05.2017.
++ */
++public class Artist implements Serializable {
++    protected TreeSet<Album> albums;
++}
+Index: src/GraphicUserInterface/AllPlaylistsPackage/playlistController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllPlaylistsPackage/playlistController.java	(revision )
++++ src/GraphicUserInterface/AllPlaylistsPackage/playlistController.java	(revision )
+@@ -0,0 +1,7 @@
++package GraphicUserInterface.AllPlaylistsPackage;
++
++/**
++ * Created by Alex on 09.05.2017.
++ */
++public class playlistController {
++}
+Index: src/GraphicUserInterface/AllSongsPackage/songsScene.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllSongsPackage/songsScene.fxml	(revision )
++++ src/GraphicUserInterface/AllSongsPackage/songsScene.fxml	(revision )
+@@ -0,0 +1,138 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ListView?>
++<?import javafx.scene.control.Menu?>
++<?import javafx.scene.control.MenuBar?>
++<?import javafx.scene.control.MenuItem?>
++<?import javafx.scene.control.Slider?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.BorderPane?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.Region?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
++
++<BorderPane maxHeight="700.0" maxWidth="712.0" minHeight="400.0" minWidth="600.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicUserInterface.Controller">
++  <bottom>
++    <VBox prefHeight="367.0" prefWidth="700.0" spacing="2.0" BorderPane.alignment="CENTER">
++      <children>
++        <ListView prefHeight="323.0" prefWidth="692.0" />
++        <HBox alignment="TOP_RIGHT" prefWidth="712.0" spacing="8.0" VBox.vgrow="ALWAYS">
++          <children>
++            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="544.0" HBox.hgrow="ALWAYS" />
++            <Button mnemonicParsing="false" text="Add" />
++            <Button mnemonicParsing="false" text="Remove" />
++          </children>
++          <padding>
++            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
++          </padding>
++        </HBox>
++      </children>
++      <padding>
++        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
++      </padding>
++    </VBox>
++  </bottom>
++  <top>
++    <VBox>
++      <children>
++        <MenuBar style="-fx-background-color: ccf0FF;">
++          <menus>
++            <Menu mnemonicParsing="false" text="All songs" />
++            <Menu mnemonicParsing="false" text="Playlists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Artists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Albums">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++          </menus>
++        </MenuBar>
++        <HBox prefHeight="196.0" prefWidth="600.0" style="-fx-background-color: #7e95ad;">
++          <children>
++            <VBox prefHeight="205.0" prefWidth="273.0">
++              <children>
++                <ImageView blendMode="SRC_OVER" depthTest="DISABLE" fitHeight="211.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
++                  <image>
++                    <Image url="@../../../photo.jpg" />
++                  </image>
++                  <VBox.margin>
++                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++                  </VBox.margin>
++                </ImageView>
++              </children>
++            </VBox>
++            <VBox alignment="TOP_CENTER" prefHeight="170.0" prefWidth="452.0" spacing="5.0">
++              <children>
++                <Label alignment="BASELINE_CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="440.0" text="Louse yourself to dance" textAlignment="CENTER" textFill="WHITE">
++                  <font>
++                    <Font size="22.0" />
++                  </font>
++                </Label>
++                <Label prefHeight="17.0" prefWidth="423.0" text="Daft Punk | Universe" textFill="WHITE">
++                  <font>
++                    <Font size="16.0" />
++                  </font>
++                </Label>
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </VBox>
++          </children>
++        </HBox>
++        <VBox style="-fx-background-color: ffffff;">
++          <children>
++            <HBox alignment="CENTER" spacing="10.0">
++              <children>
++                <Label text="Label" />
++                <Slider prefWidth="502.0" />
++                <Label text="Label" />
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </HBox>
++            <HBox maxHeight="-Infinity" minHeight="48.999900000002526" padding="$x3" prefHeight="48.999900000002526" prefWidth="712.0" spacing="10.0">
++              <children>
++                <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" prefWidth="-1.0" />
++                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏮">
++                  <font>
++                    <Font size="14.0" fx:id="x1" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" />
++                <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="▶">
++                  <font>
++                    <Font size="15.0" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" HBox.hgrow="ALWAYS" />
++                <Button font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏭" />
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="230.0" HBox.hgrow="ALWAYS" />
++                <Label alignment="CENTER" text="Volume" HBox.hgrow="ALWAYS" />
++                <Slider value="50.0">
++                  <HBox.margin>
++                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
++                  </HBox.margin>
++                </Slider>
++              </children>
++            </HBox>
++          </children>
++        </VBox>
++      </children>
++    </VBox>
++  </top>
++</BorderPane>
+Index: src/GraphicUserInterface/AllArtistsPackage/artistController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllArtistsPackage/artistController.java	(revision )
++++ src/GraphicUserInterface/AllArtistsPackage/artistController.java	(revision )
+@@ -0,0 +1,7 @@
++package GraphicUserInterface.AllArtistsPackage;
++
++/**
++ * Created by Alex on 09.05.2017.
++ */
++public class artistController {
++}
+Index: src/GraphicUserInterface/AllAlbumsPackage/albumController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/AllAlbumsPackage/albumController.java	(revision )
++++ src/GraphicUserInterface/AllAlbumsPackage/albumController.java	(revision )
+@@ -0,0 +1,7 @@
++package GraphicUserInterface.AllAlbumsPackage;
++
++/**
++ * Created by Alex on 09.05.2017.
++ */
++public class albumController {
++}
+Index: src/MediaComponents/ConcertPlayer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/MediaComponents/ConcertPlayer.java	(revision )
++++ src/MediaComponents/ConcertPlayer.java	(revision )
+@@ -0,0 +1,53 @@
++package MediaComponents;
++
++import javafx.scene.media.Media;
++import javafx.scene.media.MediaPlayer;
++import javafx.stage.FileChooser;
++import sun.reflect.generics.tree.Tree;
++
++import java.io.File;
++import java.io.IOException;
++import java.io.Serializable;
++import java.nio.file.Files;
++import java.nio.file.Path;
++import java.nio.file.StandardCopyOption;
++import java.sql.SQLSyntaxErrorException;
++import java.util.TreeSet;
++
++public class ConcertPlayer implements Serializable{
++    protected TreeSet<Artist> artists;
++
++    protected TreeSet<Song> songs;
++    protected TreeSet<Playlist> playlists;
++
++    public void addSong(){
++        FileChooser fileChooser=new FileChooser();
++
++       /* fileChooser.getExtensionFilters().addAll(
++                new FileChooser.ExtensionFilter("MP3","*.mp3"),
++                new FileChooser.ExtensionFilter("MP4","*.m4a"),
++                new FileChooser.ExtensionFilter("FLAC","*.flac"));*/
++        File file=fileChooser.showOpenDialog(null);
++        Path path=file.toPath();
++        Path path1= new File(System.getProperty("user.dir")+"\\"+file.getName()).toPath();
++        try{
++            Files.copy(path,path1,StandardCopyOption.REPLACE_EXISTING,StandardCopyOption.COPY_ATTRIBUTES);
++        }catch (IOException e){
++            System.out.println(" Exception: "+e.toString());
++        }
++        try {
++            //stem.out.println("file:/"+path1.toAbsolutePath().toString().replaceAll(" ","%20").replace('\\','/'));
++            /*Media media = new Media("file:/" + path1.toAbsolutePath().toString().replaceAll(" ", "%20").replace('\\', '/'));*/
++            System.out.println("file:/" + System.getProperty("user.dir").replace('\\', '/')+"/Starboy.m4a");
++            new MediaPlayer(new Media("file:/" + System.getProperty("user.dir").replace('\\', '/')+"/Starboy.m4a")).play();
++        }catch (Exception e){
++            System.out.println(" medial exception: "+e.toString());
++        }
++        //String path="file:/"+file.getAbsolutePath().replaceAll(" ","%20").replace('\\','/');
++        /*System.out.println(path);
++        Media song=new Media(path);
++        MediaPlayer mediaPlayer=new MediaPlayer(song);
++        mediaPlayer.play();*/
++    }
++
++}
+Index: src/GraphicUserInterface/MainWindow.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/MainWindow.fxml	(date 1494107691000)
++++ src/GraphicUserInterface/MainWindow.fxml	(revision )
+@@ -2,29 +2,137 @@
+ 
+ <?import javafx.geometry.Insets?>
+ <?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ListView?>
+ <?import javafx.scene.control.Menu?>
+ <?import javafx.scene.control.MenuBar?>
+-<?import javafx.scene.control.TextField?>
++<?import javafx.scene.control.MenuItem?>
++<?import javafx.scene.control.Slider?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
+ <?import javafx.scene.layout.BorderPane?>
+ <?import javafx.scene.layout.HBox?>
+ <?import javafx.scene.layout.Region?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
+ 
+-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicUserInterface.Controller">
++<BorderPane maxHeight="700.0" maxWidth="712.0" minHeight="400.0" minWidth="600.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicUserInterface.Controller">
++  <bottom>
++    <VBox prefHeight="367.0" prefWidth="700.0" spacing="2.0" BorderPane.alignment="CENTER">
++      <children>
++        <ListView prefHeight="323.0" prefWidth="692.0" />
++        <HBox alignment="TOP_RIGHT" prefWidth="712.0" spacing="8.0" VBox.vgrow="ALWAYS">
++          <children>
++            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="544.0" HBox.hgrow="ALWAYS" />
++            <Button mnemonicParsing="false" text="Add" />
++            <Button mnemonicParsing="false" text="Remove" />
++          </children>
++          <padding>
++            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
++          </padding>
++        </HBox>
++      </children>
++      <padding>
++        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
++      </padding>
++    </VBox>
++  </bottom>
+   <top>
+-    <HBox spacing="10.0">
++    <VBox>
+       <children>
+-        <TextField fx:id="textArea" prefWidth="200.0" />
+-        <Button fx:id="button" mnemonicParsing="false" onAction="#addFunction" text="Button" />
+-        <Region minWidth="100.0" HBox.hgrow="ALWAYS" />
+-        <MenuBar fx:id="menuBar">
++        <MenuBar style="-fx-background-color: ccf0FF;">
+           <menus>
+-            <Menu fx:id="menu" mnemonicParsing="false" text="Artists" />
++            <Menu mnemonicParsing="false" text="All songs" />
++            <Menu mnemonicParsing="false" text="Playlists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Artists">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
++            <Menu mnemonicParsing="false" text="Albums">
++              <items>
++                <MenuItem mnemonicParsing="false" text="Action 1" />
++              </items>
++            </Menu>
+           </menus>
+         </MenuBar>
+-      </children>
+-      <padding>
+-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+-      </padding>
+-    </HBox>
++        <HBox prefHeight="196.0" prefWidth="600.0" style="-fx-background-color: #7e95ad;">
++          <children>
++            <VBox prefHeight="205.0" prefWidth="273.0">
++              <children>
++                <ImageView blendMode="SRC_OVER" depthTest="DISABLE" fitHeight="211.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
++                  <image>
++                    <Image url="@../photo.jpg" />
++                  </image>
++                  <VBox.margin>
++                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++                  </VBox.margin>
++                </ImageView>
++              </children>
++            </VBox>
++            <VBox alignment="TOP_CENTER" prefHeight="170.0" prefWidth="452.0" spacing="5.0">
++              <children>
++                <Label alignment="BASELINE_CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="440.0" text="Louse yourself to dance" textAlignment="CENTER" textFill="WHITE">
++                  <font>
++                    <Font size="22.0" />
++                  </font>
++                </Label>
++                <Label prefHeight="17.0" prefWidth="423.0" text="Daft Punk | Universe" textFill="WHITE">
++                  <font>
++                    <Font size="16.0" />
++                  </font>
++                </Label>
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </VBox>
++          </children>
++        </HBox>
++        <VBox style="-fx-background-color: ffffff;">
++          <children>
++            <HBox alignment="CENTER" spacing="10.0">
++              <children>
++                <Label text="Label" />
++                <Slider prefWidth="502.0" />
++                <Label text="Label" />
++              </children>
++              <padding>
++                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
++              </padding>
++            </HBox>
++            <HBox maxHeight="-Infinity" minHeight="48.999900000002526" padding="$x3" prefHeight="48.999900000002526" prefWidth="712.0" spacing="10.0">
++              <children>
++                <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" prefWidth="-1.0" />
++                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏮">
++                  <font>
++                    <Font size="14.0" fx:id="x1" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" />
++                <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="▶">
++                  <font>
++                    <Font size="15.0" />
++                  </font>
++                </Button>
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="10.0" HBox.hgrow="ALWAYS" />
++                <Button font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="⏭" />
++                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="230.0" HBox.hgrow="ALWAYS" />
++                <Label alignment="CENTER" text="Volume" HBox.hgrow="ALWAYS" />
++                <Slider value="50.0">
++                  <HBox.margin>
++                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
++                  </HBox.margin>
++                </Slider>
++              </children>
++            </HBox>
++          </children>
++        </VBox>
++      </children>
++    </VBox>
+   </top>
+ </BorderPane>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1494107691000)
++++ .idea/vcs.xml	(revision )
+@@ -1,7 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+-</project>
+-
++</project>
+\ No newline at end of file
+Index: src/GraphicUserInterface/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/Main.java	(date 1494107691000)
++++ src/GraphicUserInterface/Main.java	(revision )
+@@ -1,5 +1,6 @@
+ package GraphicUserInterface;
+ 
++import MediaComponents.ConcertPlayer;
+ import javafx.application.Application;
+ import javafx.fxml.FXMLLoader;
+ import javafx.scene.Parent;
+@@ -7,18 +8,49 @@
+ import javafx.stage.Stage;
+ 
+ import MediaComponents.Song;
++import javafx.stage.Window;
++
++import java.io.*;
++
+ public class Main extends Application {
+ 
++    // Основной компонент проигрывателя
++    public static ConcertPlayer concertPlayer;
++    // Десериализация
++    public void init(){
++        try(ObjectInputStream objIStrm=new ObjectInputStream(
++                new FileInputStream(System.getProperty("user.dir")+"\\ConcertPlayer.txt"))){
++            concertPlayer=(ConcertPlayer)objIStrm.readObject();
++        }catch(Exception e){
++            System.out.println(" Deserialization problems: "+e.toString());
++        }
++        concertPlayer=new ConcertPlayer();
++        System.out.println("INIT");
++    }
++    // Сериализация
++    public void stop(){
++        try(ObjectOutputStream objOStrm=new ObjectOutputStream(
++                new FileOutputStream(System.getProperty("user.dir")+"\\ConcertPlayer.txt"))){
++            objOStrm.writeObject(concertPlayer);
++        }catch (IOException e){
++            System.out.println(" Exception, file is not found: "+e.toString());
++        }
++    }
++
++
++
++    public static Stage window;
++
+     @Override
+     public void start(Stage primaryStage) throws Exception{
++        window=primaryStage;
+         Parent root = FXMLLoader.load(getClass().getResource("MainWindow.fxml"));
+-        primaryStage.setTitle("Hello World");
+-        primaryStage.setScene(new Scene(root));
+-        primaryStage.show();
++        window.setTitle("ConcertPlayer");
++        window.setScene(new Scene(root));
++        window.show();
+ 
+     }
+-
+-
++    // Сериализация
+     public static void main(String[] args) {
+         launch(args);
+     }
+Index: src/GraphicUserInterface/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/GraphicUserInterface/Controller.java	(date 1494107691000)
++++ src/GraphicUserInterface/Controller.java	(revision )
+@@ -1,21 +1,36 @@
+ package GraphicUserInterface;
+ 
+ import MediaComponents.Song;
++import javafx.beans.value.ChangeListener;
++import javafx.beans.value.ObservableValue;
++import javafx.collections.ListChangeListener;
++import javafx.collections.ObservableList;
++import javafx.event.ActionEvent;
++import javafx.event.EventHandler;
++import javafx.event.EventType;
+ import javafx.fxml.FXML;
+ import javafx.fxml.Initializable;
+ import javafx.scene.control.*;
++import javafx.scene.control.ListView;
+ import javafx.scene.image.Image;
+ import javafx.scene.image.ImageView;
+ import javafx.scene.media.Media;
+ import javafx.scene.media.MediaPlayer;
++import org.omg.PortableServer.LIFESPAN_POLICY_ID;
+ 
++import javax.swing.text.html.*;
+ import java.io.*;
+ import java.net.URL;
+ import java.util.Comparator;
++import java.util.EmptyStackException;
+ import java.util.ResourceBundle;
+ import java.util.TreeSet;
+ 
+ public class Controller implements Initializable{
++    /*@FXML
++    public RadioButton radioButton1;
++    @FXML
++    public RadioButton getRadioButton2;
+     @FXML
+     public Menu menu;
+     @FXML
+@@ -24,29 +39,80 @@
+     public TextField textArea;
+     @FXML
+     public MenuBar menuBar;
+-
++    @FXML
++    public ImageView imageView;
++    @FXML ImageView albumView;
++    @FXML
++    public ListView listView;
++    @FXML
++    public MediaPlayer mediaPlayer;
+     public void addFunction(){
++        Main.concertPlayer.addSong();
+ 
+     }
++    @FXML
++    public Label label;*/
+     /*@FXML
+     private Button playButton;
+     @FXML
+     private Label informationLabel;
+     @Override*/
+     public void initialize(URL location, ResourceBundle resources){
+-        button.setOnAction(e->{
+-            Image image=new Image("file:/"+"C:/Users/Alex/IdeaProjects/ConcertPlayer/src/photo.jpg");
++       /* for(int i=0; i<10; i++)
++            listView.getItems().add(i+1);
++        listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
++        listView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener() {
++            @Override
++            public void changed(ObservableValue observable, Object oldValue, Object newValue) {
++                ObservableList<Integer> selected=
++                        listView.getSelectionModel().getSelectedItems();
++                if(selected.size()==0)
++                    label.setText(" Empty");
++                else {
++                    String tmpString=new String("");
++                    if(selected!=null)
++                    for (int i = 0; i < selected.size(); i++) {
++                        String str;
++                        if(selected.get(i)!=null)
++                            str=selected.get(i).toString();
++                        else
++                            break;
++                        tmpString+=" "+selected.get(i).toString();
++                    }
++                    label.setText(tmpString);
++                }
+ 
++
++            }
++        });
++
++        System.out.println("file:/" + System.getProperty("user.dir").replace('\\', '/')+"/Starboy.m4a");
++       // new MediaPlayer(new Media("file:/" + System.getProperty("user.dir").replace('\\', '/')+"/Starboy.m4a")).play();
++        button.setOnAction((ActionEvent e) ->{
++            Image image=new Image("file:/"+System.getProperty("user.dir")+"/Data/Images/Songs/Daft Punk.jpg");
+             ImageView imageView =new ImageView(image);
+             imageView.setFitHeight(40);
+             imageView.setFitWidth(40);
+             MenuItem menuItem=new MenuItem(textArea.getText(),imageView);
++            String str=new String(menuItem.getText());
++            ImageView imageView1=imageView;
+             menuItem.setOnAction(b->{
+-                System.out.println(textArea.getText() + "menue was choosen");
++                try {
++                    Song song = new Song(str + ".mp3");
++                    mediaPlayer = new MediaPlayer(song.getSong());
++                    albumView.setImage(song.getSongImage());
++                    mediaPlayer.play();
++                }catch (Exception exp){
++                    System.out.println(" Exception in menueItem: "+exp.toString());
++                }
+             });
+             menu.getItems().add(menuItem);
+-        });
+ 
++
++        });
++        menu.setOnAction(e->{
++            System.out.println(" Menu checked");
++        });*/
+        /* System.out.println(" Initialize method");
+         playButton.setOnAction(action->{
+             mediaPlayer=new MediaPlayer(song.getSong());
+Index: src/MediaComponents/Song.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/MediaComponents/Song.java	(date 1494107691000)
++++ src/MediaComponents/Song.java	(revision )
+@@ -1,5 +1,6 @@
+ package MediaComponents;
+ 
++import javafx.scene.image.Image;
+ import javafx.scene.media.Media;
+ 
+ import java.io.Serializable;
+@@ -7,24 +8,42 @@
+ public class Song implements Serializable {
+     protected String nameOfTheSong;
+     protected String nameOfTheArtist;
+-    protected Media song;
++    protected String nameOfAlbum;
++    protected String nameOfTheSongWithCodingFormat;
+ 
+-    public static String path;
++    protected static String songPath;
++    protected static String imagePath;
++
++    protected Media composition;
++    protected Image songImage;
++
+     static {
+-        path = "file:/" + System.getProperty("user.dir").replace('\\', '/')+"/";
+-        System.out.println(" Path: "+path);
+-    }
+-    public Song(String nameOfTheSong, String nameOfTheArtist){
+-
+-        song=new Media(path+nameOfTheSong.replaceAll(" ","%20"));
+-        nameOfTheSong=nameOfTheSong.substring(0,nameOfTheSong.lastIndexOf('.'));
+-        this.nameOfTheArtist=nameOfTheArtist;
++        songPath = "file:/" + System.getProperty("user.dir").replace('\\', '/')+"/Data/Songs/";
++        imagePath="file:/"+System.getProperty("user.dir").replace('\\','/')+"/Data/Images/Songs/";
++        System.out.println(songPath);
++        System.out.println(imagePath);
+ 
+     }
++    public Song(String nameOfTheSongWithCodingFormat){
++        try {
++            this.nameOfTheSongWithCodingFormat=nameOfTheSongWithCodingFormat;
++            composition=new Media(songPath+nameOfTheSongWithCodingFormat.replaceAll(" ","%20"));
++            nameOfTheSong=nameOfTheSongWithCodingFormat.substring(0,nameOfTheSongWithCodingFormat.lastIndexOf('.'));
++            songImage=new Image(imagePath+nameOfTheSong+".jpg");
++        }catch (Exception e){
++            System.out.println("EXCEPTION : "+e.toString());
++        }
+ 
++    }
++    public Image getSongImage(){
++        return  songImage;
++    }
+     public Media getSong(){
+-        return song;
++        return composition;
+     }
++   /* public Media getSong(){
++       // return song;
++    }*/
+     public String getNameOfTheSong(){
+         System.out.println(" name Of The Song: "+nameOfTheSong);
+         return nameOfTheSong;
+Index: text.txt
+===================================================================
+--- text.txt	(date 1494107691000)
++++ text.txt	(date 1494107691000)
+@@ -1,43 +0,0 @@
+-�� sr MediaComponents.Song�Ɉ���E L nameOfTheArtistt Ljava/lang/String;L 
+-nameOfTheSongq ~ L songt Ljavafx/scene/media/Media;xpt 	Daft Punkp{sr  java.io.NotSerializableException(Vx �5  xr java.io.ObjectStreamExceptiond��k�9��  xr java.io.IOExceptionl�sde%�  xr java.lang.Exception��>;�  xr java.lang.Throwable��5'9w�� L causet Ljava/lang/Throwable;L 
+-detailMessaget Ljava/lang/String;[ 
+-stackTracet [Ljava/lang/StackTraceElement;L suppressedExceptionst Ljava/util/List;xpq ~ 	t javafx.scene.media.Mediaur [Ljava.lang.StackTraceElement;F*<<�"9  xp   $sr java.lang.StackTraceElementa	Ś&6݅ I 
+-lineNumberL declaringClassq ~ L fileNameq ~ L 
+-methodNameq ~ xp  �t java.io.ObjectOutputStreamt ObjectOutputStream.javat writeObject0sq ~ 
+-  q ~ q ~ t defaultWriteFieldssq ~ 
+-  �q ~ q ~ t writeSerialDatasq ~ 
+-  �q ~ q ~ t writeOrdinaryObjectsq ~ 
+-  �q ~ q ~ q ~ sq ~ 
+-  \q ~ q ~ t writeObjectsq ~ 
+-   #t GraphicUserInterface.Controllert Controller.javat <init>sq ~ 
+-����t )sun.reflect.NativeConstructorAccessorImplt "NativeConstructorAccessorImpl.javat newInstance0sq ~ 
+-   >q ~  q ~ !t newInstancesq ~ 
+-   -t -sun.reflect.DelegatingConstructorAccessorImplt &DelegatingConstructorAccessorImpl.javaq ~ $sq ~ 
+-  �t java.lang.reflect.Constructort Constructor.javaq ~ $sq ~ 
+-  �t java.lang.Classt 
+-Class.javaq ~ $sq ~ 
+-   3t sun.reflect.misc.ReflectUtilt ReflectUtil.javaq ~ $sq ~ 
+-  �t #javafx.fxml.FXMLLoader$ValueElementt FXMLLoader.javat processAttributesq ~ 
+-  �t 1javafx.fxml.FXMLLoader$InstanceDeclarationElementq ~ 3q ~ 4sq ~ 
+-   �t javafx.fxml.FXMLLoader$Elementq ~ 3t processStartElementsq ~ 
+-  �q ~ 2q ~ 3q ~ 9sq ~ 
+-  
+-�t javafx.fxml.FXMLLoaderq ~ 3q ~ 9sq ~ 
+-  	�q ~ <q ~ 3t loadImplsq ~ 
+-  	�q ~ <q ~ 3q ~ >sq ~ 
+-  �q ~ <q ~ 3q ~ >sq ~ 
+-  gq ~ <q ~ 3q ~ >sq ~ 
+-  Lq ~ <q ~ 3q ~ >sq ~ 
+-  4q ~ <q ~ 3q ~ >sq ~ 
+-   q ~ <q ~ 3q ~ >sq ~ 
+-  q ~ <q ~ 3t loadsq ~ 
+-   t GraphicUserInterface.Maint 	Main.javat startsq ~ 
+-  _t 'com.sun.javafx.application.LauncherImplt LauncherImpl.javat lambda$launchApplication1$162sq ~ 
+-  Ft 'com.sun.javafx.application.PlatformImplt PlatformImpl.javat lambda$runAndWait$175sq ~ 
+-  'q ~ Pq ~ Qt lambda$null$173sq ~ 
+-����t java.security.AccessControllert AccessController.javat doPrivilegedsq ~ 
+-  &q ~ Pq ~ Qt lambda$runLater$174sq ~ 
+-   _t -com.sun.glass.ui.InvokeLaterDispatcher$Futuret InvokeLaterDispatcher.javat runsq ~ 
+-����t #com.sun.glass.ui.win.WinApplicationt WinApplication.javat _runLoopsq ~ 
+-   �q ~ `q ~ at lambda$null$148sq ~ 
+-  �t java.lang.Threadt Thread.javaq ~ ^sr &java.util.Collections$UnmodifiableList�%1�� L listq ~ xr ,java.util.Collections$UnmodifiableCollectionB ��^� L ct Ljava/util/Collection;xpsr java.util.ArrayListx����a� I sizexp    w    xq ~ mx
+\ No newline at end of file
